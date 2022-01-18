@@ -1,0 +1,35 @@
+.outer-wrapper-container {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.inner-middle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 1.2em sans-serif;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-size: large;
+}
+
+.home-nav-container {
+    margin-right: 20%;
+}
+
+.about-me-nav-container {
+    margin-right: 20%;
+}
+
+.experience-nav-container {
+    margin-right: 20%;
+}
+
+.skills-nav-container {
+    margin-right: 20%;
+}
+
+.contact-icon {
+    margin-top: 15px;
+}

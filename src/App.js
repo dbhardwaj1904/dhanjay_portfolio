@@ -4,6 +4,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom"
+
+import TopNav from "./components/topNav";
 import Home from "./screens/home";
 import AboutMe from "./screens/aboutme";
 import Experience from "./screens/experience";
@@ -14,6 +16,7 @@ function App() {
   return (
     <>
       <Router>
+        <TopNav />
         <Routes>
           <Route exact path="/" component={Home} element={<Home />}/>
           <Route exact path="/aboutme" component={AboutMe} element={<AboutMe />}/>

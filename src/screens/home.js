@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import TopNav from "./topNav";
 import {
     init,
 } from "ityped";
@@ -20,7 +19,6 @@ export default function Home(){
 
     return (
         <>
-        <TopNav />
         <h2>Hi There, I'm</h2>
         <h1>Dhanjay Bhardwaj</h1>
         <h3><span ref={textRef}></span></h3>

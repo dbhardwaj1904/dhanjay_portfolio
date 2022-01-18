@@ -1,11 +1,10 @@
 import React from "react";
-import TopNav from "./topNav";
 
 export default function Contact(){
     return (
         <>
-        <TopNav />
-        <p>Contact Page</p>
+        <h1>Contact Page</h1>
+        <p>This is a wonderful day.</p>
         </>
     );
 }
