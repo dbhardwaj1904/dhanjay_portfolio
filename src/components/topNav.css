@@ -33,3 +33,17 @@
 .contact-icon {
     margin-top: 15px;
 }
+
+.contact-form-outer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-inner-middle-wrapper {
+    border: 2px solid grey;
+    height: 380px;
+    left: 50%;
+    right: 50%;
+    top: 10%;
+}
