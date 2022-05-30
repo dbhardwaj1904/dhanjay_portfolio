@@ -5,6 +5,7 @@ import {
     Link,
 } from "react-router-dom";
 import * as ContactIcon from "react-icons/io";
+import * as MailIcon from "react-icons/ai";
 import Modal from "react-modal";
 import TextField from '@mui/material/TextField';
 import TextareaAutosize from "@mui/material/TextareaAutosize";
@@ -17,7 +18,9 @@ const customStyles = {
         left: "50%",
         right: "auto",
         bottom: "auto",
-        transform: "translate(-50%, -50%)"
+        transform: "translate(-50%, -50%)",
+        width: "50%",
+        height: "70%",
     }
 }
 
@@ -38,8 +41,8 @@ export default function TopNav() {
             <div className="outer-wrapper-container">
 
                 {/* Left Nav */}
-                <div className="inner-left-wrapper">
-                    <h2> Portfolio. </h2>
+                <div style={{display: "flex", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
+                    <h4> Minimalist. </h4>
                 </div>
 
                 {/* Middle Nav */}
@@ -47,34 +50,35 @@ export default function TopNav() {
                     <div className="home-nav-container">
                         <Link
                             to="/"
-                            className="home-link-nav" style={{ textDecoration: 'none', color: 'black' }}>Home</Link>
+                            className="link-nav">Home</Link>
                     </div>
                     <div className="about-me-nav-container">
                         <Link
                             to="/aboutme"
-                            className="about-me-link-nav" style={{ textDecoration: 'none', color: 'black' }}>About&nbsp;Me</Link>
+                            className="link-nav">About&nbsp;Me</Link>
                     </div>
                     <div className="experience-nav-container">
                         <Link
                             to="/experience"
-                            className="experience-link-nav" style={{ textDecoration: 'none', color: 'black' }}>Experience</Link>
+                            className="link-nav">Experience</Link>
                     </div>
                     <div className="skills-nav-container">
                         <Link
                             to="/skills"
-                            className="skills-link-nav" style={{ textDecoration: 'none', color: 'black' }}>Skills</Link>
+                            className="link-nav">Skills</Link>
                     </div>
                 </nav>
 
 
-                {/* Right Nav OR Hamburger menu */}
+                {/* Right Nav OR Hamburger menu 
                 <div className="inner-right-wrapper">
                     <div className="contact-icon">
                         <ContactIcon.IoIosContact
-                            size={45}
+                            size={25}
                             onClick={openModal} />
                     </div>
                 </div>
+                */}
 
 
             </div>
@@ -83,12 +87,17 @@ export default function TopNav() {
                 isOpen={modal}
                 style={customStyles}
             >
-                <h2>CONTACT FORM</h2>
+                <h2 style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}>CONTACT FORM</h2>
                 <div className="contact-form-outer-wrapper">
 
                     {/* Inner Left Side */}
                     <div className="contact-form-inner-left-wrapper">
-                        <p>ICONS</p>
+                        <MailIcon.AiFillMail size={50} style={{margin: 15}} color="red"/>
+                        <ContactIcon.IoMdCall size={50} style={{margin: 15}} color="skyblue"/>
                     </div>
 
 
@@ -106,8 +115,8 @@ export default function TopNav() {
                             label="Name"
                             variant="outlined"
                             style={{
-                                width: 300,
-                                height: 100,
+                                width: 200,
+                                height: 80,
                             }} />
                         <br />
                         <TextField
@@ -115,8 +124,8 @@ export default function TopNav() {
                             label="Email Address"
                             variant="outlined"
                             style={{
-                                width: 300,
-                                height: 100,
+                                width: 200,
+                                height: 80,
                             }} />
                         <br />
                         <div style={{ marginTop: "-30px" }}>
@@ -125,7 +134,7 @@ export default function TopNav() {
                                 aria-label="empty textarea"
                                 placeholder="Type your message..."
                                 style={{
-                                    width: 295,
+                                    width: 195,
                                     height: 100,
                                     borderColor: "#bfbfbf",
                                     borderRadius: "5px",
@@ -134,6 +143,30 @@ export default function TopNav() {
                         </div>
                     </div>
                 </div>
+
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    justifyItems: 'center',
+                    marginTop: 50
+                    }}>
+                    <button style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        justifyItems: 'center',
+                        height: 50,
+                        width: 200,
+                        fontSize: 18,
+                        backgroundColor: '#ffa500',
+                        border: 0,
+                        fontWeight: 'bold'
+                        }} >
+                            Send message
+                        </button>
+                </div>
+                
 
 
             </Modal>

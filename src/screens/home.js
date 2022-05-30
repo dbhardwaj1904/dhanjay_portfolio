@@ -4,7 +4,7 @@ import {
 } from "ityped";
 import "./Screens.scss";
 
-export default function Home(){
+export default function Home() {
 
     const textRef = useRef();
 
@@ -18,10 +18,24 @@ export default function Home(){
     }, []);
 
     return (
-        <>
-        <h2>Hi There, I'm</h2>
-        <h1>Dhanjay Bhardwaj</h1>
-        <h3><span ref={textRef}></span></h3>
-        </>
+        <div
+            className="outerWrapper">
+            <div
+                style={{
+                    position: "relative",
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: 'flex-start',
+                    alignItems: 'center'
+                }}>
+                <div
+                    className="circle">
+                </div>
+                <p className="authorName">I'm Dhanjay Bhardwaj.</p>
+            </div>
+
+            <p className="professionName">I'm a <span ref={textRef}></span></p>
+            <p className="professionName">Based in India. </p>
+        </div>
     );
 }
