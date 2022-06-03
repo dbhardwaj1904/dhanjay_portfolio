@@ -20,22 +20,15 @@ export default function Home() {
     return (
         <div
             className="outerWrapper">
-            <div
-                style={{
-                    position: "relative",
-                    display: "flex",
-                    flexDirection: "row",
-                    justifyContent: 'flex-start',
-                    alignItems: 'center'
-                }}>
-                <div
-                    className="circle">
-                </div>
+            <div className="intro">
+                <div className="circle"></div>
                 <p className="authorName">I'm Dhanjay Bhardwaj.</p>
             </div>
 
             <p className="professionName">I'm a <span ref={textRef}></span></p>
             <p className="professionName">Based in India. </p>
+            <button>My Portfolio</button>
+            <button style={{border: 0, backgroundColor: "transparent", fontWeight: "bold"}}>Read More</button>
         </div>
     );
 }

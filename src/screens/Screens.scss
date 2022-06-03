@@ -4,18 +4,23 @@ h3 {
     }
 
     @keyframes blink {
-        50%{
+        50% {
             opacity: 1;
         }
 
-        100%{
+        100% {
             opacity: 0;
         }
     }
 }
 
-.circle
-{
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
     display: flex;
     width: 50px;
     height: 50px;
@@ -23,8 +28,10 @@ h3 {
     border-radius: 50%;
 }
 
-.authorName
-{
+.authorName {
+    display: "flex";
+    flex-direction: "row";
+    justify-content: 'flex-start';
     font-size: 100%;
     text-align: center;
     font-weight: bold;
@@ -36,8 +43,7 @@ h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.professionName
-{
+.professionName {
     font-size: 150%;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

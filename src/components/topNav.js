@@ -40,34 +40,32 @@ export default function TopNav() {
         <>
             <div className="outer-wrapper-container">
 
-                {/* Left Nav */}
-                <div style={{display: "flex", alignContent: "center", justifyContent: "center", alignSelf: "center"}}>
+                {/* Left Nav 
+                <div>
                     <h4> Minimalist. </h4>
-                </div>
+                </div>*/}
 
                 {/* Middle Nav */}
-                <nav className="inner-middle-wrapper">
-                    <div className="home-nav-container">
+                <div className="inner-middle-wrapper">
                         <Link
                             to="/"
                             className="link-nav">Home</Link>
-                    </div>
-                    <div className="about-me-nav-container">
                         <Link
                             to="/aboutme"
                             className="link-nav">About&nbsp;Me</Link>
-                    </div>
-                    <div className="experience-nav-container">
+                        <Link
+                            to="/resume"
+                            className="link-nav">Resume</Link>
                         <Link
                             to="/experience"
                             className="link-nav">Experience</Link>
-                    </div>
-                    <div className="skills-nav-container">
                         <Link
                             to="/skills"
                             className="link-nav">Skills</Link>
-                    </div>
-                </nav>
+                        <Link
+                            to="/contact"
+                            className="link-nav">Contact</Link>
+                </div>
 
 
                 {/* Right Nav OR Hamburger menu 
