@@ -1,0 +1,52 @@
+.intro {
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #ffa500;
+    border-radius: 50%;
+}
+
+.authorName {
+    flex-direction: "row";
+    justify-content: 'flex-start';
+    text-align: center;
+    font-weight: bold;
+    height: 40;
+    font-size: 100%;
+    margin-left: -1.2%;
+    transform: scale(1.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contactHeading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.outerWrapper {
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+.cornerHalf{
+    width: 10%;
+}
+
+.leftHalf {
+    width: 35%;
+    text-align: right;
+}
+
+.middleHalf {
+    width: 45%;
+    align-self: center;
+}
+
+.rightHalf {
+    width: 10%;
+}

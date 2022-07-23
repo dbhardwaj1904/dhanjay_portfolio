@@ -1,10 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom"
-import Snowfall from 'react-snowfall'
 
 import TopNav from "./components/topNav";
 import Home from "./screens/home";
@@ -16,10 +15,14 @@ import Resume from "./screens/resume";
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Portfolio - Dhanjay Bhardwaj"
+  }, [])
+
   return (
     <div className="root-container">
       <Router>
-        <Snowfall color="#fff" snowflakeCount={200}/>
         <TopNav />
         <Routes>
           <Route exact path="/" component={Home} element={<Home />}/>
